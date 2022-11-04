@@ -1,0 +1,140 @@
+html {
+
+    position: relative;
+    background: #272727;
+    mix-blend-mode: normal;
+
+}
+
+.easton {
+    position: absolute;
+    width: 319px;
+    height: 144px;
+    left: 150px;
+    top: 178px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 144px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.035em;
+
+    color: #EFF1F3;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.comp-eng {
+    position: absolute;
+    width: 591px;
+    height: 96px;
+    left: 150px;
+    top: 349px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.035em;
+
+    color: #EFF1F3;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.desc {
+    position: absolute;
+width: 700px;
+height: 243px;
+left: 150px;
+top: 472px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 40px;
+line-height: 60px;
+display: flex;
+align-items: center;
+letter-spacing: -0.035em;
+
+color: #EFF1F3;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+
+    position: absolute;
+    width: 179px;
+    height: 79px;
+    left: 150px;
+    top: 809px;
+
+}
+
+button {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 18px;
+    gap: 10px;
+
+    width: 175px;
+    height: 75px;
+
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-shadow: -4px 4px 0px #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    font-family: Inter;
+}
+
+button:hover {
+    box-shadow: 0 0 3px black;
+    margin-top: -10px;
+    cursor:pointer;
+}
+
+.easton-photo {
+    position: absolute;
+    left: 1200px;
+    top: 178px;
+    filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.25));
+    background-color: red;
+}
+
+.photo {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: url(P1023490.jpg);
+}
