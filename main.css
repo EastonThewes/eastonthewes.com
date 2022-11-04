@@ -6,17 +6,138 @@ html {
 
 }
 
+.header {
+    display: flex;
+}
+
+.icons {
+    top: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    padding-top: 25px;
+    padding-right: 25px;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.info {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    color: #EFF1F3;
+    margin-top: 20px;
+}
+
+.info a {
+    text-decoration: none;
+    
+}
+
+.info a:visited {
+    text-decoration: none;
+    color: #EFF1F3;
+}
+
+.content {
+    display: flex;
+
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.photo {
+    flex: 1;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    background: url(P1023490.jpg);
+
+}
+
+.easton-photo img{
+    border-radius: 50%;
+    position: relative;
+    left: 25%;
+    top: 50px;
+    filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.25));
+
+}
+
+
+
+
+.about-me:hover {
+    transform: scale(125%);
+    cursor:pointer;
+}
+
+.prof-ex:hover {
+    transform: scale(125%);
+    cursor:pointer;
+}
+
+.projects:hover {
+    transform: scale(125%);
+    cursor:pointer;
+}
+
+.email {
+    margin: 0 25px 5px 0;
+    width: 50px;
+    height: 50px;
+    filter: invert(100%)
+}
+
+.email:hover {
+    transform: scale(125%);
+    cursor:pointer;
+}
+
+.linkedin {
+    margin: 0 25px 5px 0;
+    width: 50px;
+    height: 50px;
+    filter: invert(100%)
+}
+
+.linkedin:hover {
+    transform: scale(125%);
+    cursor:pointer;
+}
+
+.github {
+    margin: 0 25px 5px 0;
+    width: 50px;
+    height: 50px;
+    filter: invert(100%)
+}
+
+.github:hover {
+    transform: scale(125%);
+    cursor:pointer;
+}
+
+
 .easton {
-    position: absolute;
-    width: 319px;
+    position: relative;
     height: 144px;
     left: 150px;
-    top: 178px;
+    top: 50px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 96px;
+    font-size: 72px;
     line-height: 144px;
 
     /* identical to box height */
@@ -30,16 +151,16 @@ html {
 }
 
 .comp-eng {
-    position: absolute;
+    position: relative;
     width: 591px;
     height: 96px;
     left: 150px;
-    top: 349px;
+ 
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 96px;
 
     /* identical to box height */
@@ -53,24 +174,24 @@ html {
 }
 
 .desc {
-    position: absolute;
-width: 700px;
-height: 243px;
-left: 150px;
-top: 472px;
+    position: relative;
+    width: 700px;
+    height: 243px;
+    left: 150px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 40px;
-line-height: 60px;
-display: flex;
-align-items: center;
-letter-spacing: -0.035em;
 
-color: #EFF1F3;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.035em;
 
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #EFF1F3;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about {
@@ -80,16 +201,14 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     justify-content: center;
     align-items: center;
     padding: 2px;
-
-    position: absolute;
+    position: relative;
     width: 179px;
     height: 79px;
     left: 150px;
-    top: 809px;
 
 }
 
-button {
+.about-me-button {
     /* Auto layout */
     display: flex;
     flex-direction: row;
@@ -111,30 +230,15 @@ button {
     flex-grow: 0;
 
     font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 100%;
     font-family: Inter;
 }
 
-button:hover {
+.about-me-button:hover {
     box-shadow: 0 0 3px black;
     margin-top: -10px;
     cursor:pointer;
 }
 
-.easton-photo {
-    position: absolute;
-    left: 1200px;
-    top: 178px;
-    filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.25));
-    background-color: red;
-}
 
-.photo {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    object-fit: cover;
-    background: url(P1023490.jpg);
-}
