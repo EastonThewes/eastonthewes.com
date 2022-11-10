@@ -1,0 +1,58 @@
+.header {
+    margin-top: 50px;
+    
+}
+
+.info {
+    font-size: 4vw;;
+}
+
+.icons {
+    display: none;
+}
+
+.content {
+    flex-direction: column;
+    margin-top: 0rem;
+}
+
+
+.easton {
+    font-size: 12vw;;
+    justify-content: center;
+    left: 0;
+    padding-bottom: 15px;
+}
+
+.comp-eng {
+    font-size: 9vw;
+    justify-content: center;
+    left: 0;
+    padding-bottom: 15px;
+}
+
+.desc {
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 3vh;
+    left: 0;
+}
+
+.easton-photo {
+    
+    margin-top: 3vh;
+    display: flex; 
+}
+
+.easton-photo div {
+    margin: auto;
+}
+
+.photo img {
+    height: 55vw;
+    width: 55vw;
+}
+
+
+
+

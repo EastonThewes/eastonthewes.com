@@ -1,41 +1,52 @@
 html {
-
     position: relative;
     background: #272727;
     mix-blend-mode: normal;
-
 }
 
 .header {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .icons {
-    top: 0;
-    left: 0;
-    height: 50px;
     display: flex;
-    padding-top: 25px;
-    padding-right: 25px;
-    justify-content: flex-end;
     flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icons img {
+    padding-left: 50px;
+    width: 44px;
+    height: 44px;
+    filter: invert(100%)
+}
+
+.icons img:last-child {
+    padding-right: 50px;
 }
 
 .info {
     display: flex;
     flex: 1;
+    align-items: center;
     justify-content: space-evenly;
     font-family: 'Inter';
     font-style: normal;
     font-size: 24px;
     font-weight: 700;
     color: #EFF1F3;
-    margin-top: 20px;
 }
 
 .info a {
-    text-decoration: none;
-    
+     text-decoration: none;
+}
+
+.info h4 {
+    width: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .info a:visited {
@@ -43,202 +54,86 @@ html {
     color: #EFF1F3;
 }
 
+
+
 .content {
     display: flex;
-
+    position: relative;
+    margin-top: 5rem;
 }
 
 .name {
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 2;
 }
-
-.photo {
-    flex: 1;
-    position: relative;
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    background: url(P1023490.jpg);
-
-}
-
-.easton-photo img{
-    border-radius: 50%;
-    position: relative;
-    left: 25%;
-    top: 50px;
-    filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.25));
-
-}
-
-
-
-
-.about-me:hover {
-    transform: scale(125%);
-    cursor:pointer;
-}
-
-.prof-ex:hover {
-    transform: scale(125%);
-    cursor:pointer;
-}
-
-.projects:hover {
-    transform: scale(125%);
-    cursor:pointer;
-}
-
-.email {
-    margin: 0 25px 5px 0;
-    width: 50px;
-    height: 50px;
-    filter: invert(100%)
-}
-
-.email:hover {
-    transform: scale(125%);
-    cursor:pointer;
-}
-
-.linkedin {
-    margin: 0 25px 5px 0;
-    width: 50px;
-    height: 50px;
-    filter: invert(100%)
-}
-
-.linkedin:hover {
-    transform: scale(125%);
-    cursor:pointer;
-}
-
-.github {
-    margin: 0 25px 5px 0;
-    width: 50px;
-    height: 50px;
-    filter: invert(100%)
-}
-
-.github:hover {
-    transform: scale(125%);
-    cursor:pointer;
-}
-
 
 .easton {
     position: relative;
-    height: 144px;
-    left: 150px;
-    top: 50px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 72px;
-    line-height: 144px;
-
-    /* identical to box height */
+    padding-bottom: 15px;
+    margin: auto;
     display: flex;
     align-items: center;
     letter-spacing: -0.035em;
-
     color: #EFF1F3;
-
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: max-content;
 }
+
+
+.easton-photo {
+    flex: 1; 
+}
+
+.photo {
+    position: relative;
+    object-fit:cover;
+    border-radius: 50%;
+    
+}
+
+.photo img {
+    width: 50vh;
+    height: 50vh;
+}
+
 
 .comp-eng {
     position: relative;
-    width: 591px;
-    height: 96px;
-    left: 150px;
- 
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
-    line-height: 96px;
-
-    /* identical to box height */
+    margin: auto;
     display: flex;
     align-items: center;
     letter-spacing: -0.035em;
-
+    padding-bottom: 15px;
     color: #EFF1F3;
-
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .desc {
     position: relative;
-    width: 700px;
-    height: 243px;
-    left: 150px;
-
-
+    width: 75%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 60px;
+    margin: auto;
+    text-align: center;
     display: flex;
     align-items: center;
     letter-spacing: -0.035em;
-
     color: #EFF1F3;
-
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.about {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-    position: relative;
-    width: 179px;
-    height: 79px;
-    left: 150px;
-
-}
-
-.about-me-button {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 18px;
-    gap: 10px;
-
-    width: 175px;
-    height: 75px;
-
-    background: #FFFFFF;
-    border: 2px solid #000000;
-    box-shadow: -4px 4px 0px #000000;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 100%;
-    font-family: Inter;
-}
-
-.about-me-button:hover {
-    box-shadow: 0 0 3px black;
-    margin-top: -10px;
-    cursor:pointer;
-}
 
 
