@@ -8,7 +8,7 @@
         <a href="https://github.com/eastonthewes"><i class="bi bi-github" title="My Github!"></i></a>    
         <a href="https://www.linkedin.com/in/eastonthewes/"><i class="bi bi-linkedin" title="My LinkedIn!"></i></a>
         <a href="mailto: theweseaston@gmail.com"><i class="bi bi-envelope" title="Email Me!"></i></a>
-        <a href="../static/pdf/ThewesEaston_Resume.pdf" download><i class="bi bi-filetype-pdf" title="My Resume!"></i></a>
+        <!-- <a href="../static/pdf/ThewesEaston_Resume.pdf" download><i class="bi bi-filetype-pdf" title="My Resume!"></i></a> -->
     </div>
 
 </template>
