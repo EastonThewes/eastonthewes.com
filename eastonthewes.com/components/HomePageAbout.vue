@@ -1,0 +1,37 @@
+<template>
+
+    <div class="md:ml-8 md:mr-8 " >
+        <h2 class="text-7xl font-semibold pb-8 drop-shadow-xl  easton">hi, i'm easton</h2>
+        <p class="text-2xl text-justify font-extralight drop-shadow-2xl about  ">I am a recent graduate from West Virginia University and I am looking for a full time position!</p>
+    </div>
+    <div class="flex gap-12 text-4xl pt-8 justify-center md:justify-start md:ml-8">
+        <a href="https://github.com/eastonthewes"><i class="bi bi-github" title="My Github!"></i></a>    
+        <a href="https://www.linkedin.com/in/eastonthewes/"><i class="bi bi-linkedin" title="My LinkedIn!"></i></a>
+        <a href="mailto: theweseaston@gmail.com"><i class="bi bi-envelope" title="Email Me!"></i></a>
+        <a href="../static/pdf/ThewesEaston_Resume.pdf" download><i class="bi bi-filetype-pdf" title="My Resume!"></i></a>
+    </div>
+
+</template>
+
+<style lang="scss" scoped>
+    @font-face {
+        font-family: Cocogoose;
+        src: url(assets/fonts/Cocogoose_trial.otf);
+    }
+
+    @font-face {
+        font-family: Butler;
+        src: url(assets/fonts/Butler_Regular.otf);
+    }
+
+    .easton {
+        font-family: Cocogoose;
+    }
+
+    .about {
+        font-family: Butler;
+    }
+    
+
+    
+</style>
