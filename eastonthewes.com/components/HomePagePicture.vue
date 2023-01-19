@@ -1,8 +1,8 @@
 <template>
 
-        <div class="pt-8 pb-24 md:pt-0 flex justify-center">
+        <div class="pb-24 md:pt-8 flex justify-center">
             <div>
-                <img src="../assets/easton.jpg" alt="Easton" class="w-80 md:w-96 rounded-3xl drop-shadow-2xl shadow-2xl"/>
+                <img src="../assets/easton.jpg" alt="Easton" class="w-80 h-80 md:w-96 md:h-96 object-cover object-top rounded-full drop-shadow-2xl shadow-2xl"/>
             </div>
         </div>
 
