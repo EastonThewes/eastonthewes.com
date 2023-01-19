@@ -3,7 +3,7 @@
         <div>
             <Header />
         </div>
-        <div class="mt-4">
+        <div>
             <slot />
         </div>
     </div>
