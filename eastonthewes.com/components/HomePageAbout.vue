@@ -1,7 +1,7 @@
 <template>
     
         <div class="md:mx-8" >
-            <h2 class="text-7xl md:text-8xl font-semibold pb-8 drop-shadow-xl text-center easton">hi, i'm <b class="text-green-500">easton</b></h2>
+            <h2 class="text-7xl md:text-8xl font-semibold pb-8 drop-shadow-xl md:text-left text-center easton">hi, i'm <b class="text-green-500">easton</b></h2>
             <p class="text-2xl md:text-4xl font-extralight drop-shadow-2xl about  ">I am a recent graduate from West Virginia University and I am looking for a full time position!</p>
         </div>
         <div class="flex gap-12 text-4xl pt-8 justify-center md:justify-start md:ml-8">
