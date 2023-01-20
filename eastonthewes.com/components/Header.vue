@@ -3,7 +3,7 @@
     <div class="bg-zinc-900 text-primary py-3.5 md:px-16 shadow px-6 md:flex justify-between items-center z-50">
         <!-- eastonthewes.com -->
         <div class="flex items-center">
-            <span class="text-3xl mr-1 font">
+            <span class="text-3xl mr-1 hover:text-green-500 font">
                 <nuxt-link to="/">eastonthewes.com</nuxt-link>
             </span>
         </div>
