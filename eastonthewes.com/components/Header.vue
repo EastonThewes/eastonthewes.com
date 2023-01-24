@@ -3,20 +3,20 @@
     <div class="bg-zinc-900 text-primary py-3.5 md:px-16 shadow px-6 md:flex justify-between items-center z-50">
         <!-- eastonthewes.com -->
         <div class="flex items-center">
-            <span class="text-3xl mr-1 font">
+            <span class="text-3xl mr-1 hover:text-amber-400 font">
                 <nuxt-link to="/">eastonthewes.com</nuxt-link>
             </span>
         </div>
 
         <!-- Button -->
-        <span @click="MenuOpen()" class="absolute xl:hidden hover:text-green-500 right-6 top-1.5 cursor-pointer text-4xl">
+        <span @click="MenuOpen()" class="absolute xl:hidden hover:text-amber-400 right-6 top-1.5 cursor-pointer text-4xl">
             <i :class="[open ? 'bi bi-x' : 'bi bi-list']"></i>
         </span>
        
         <ul class="xl:flex xl:items-center xl:px-0 px-20 xl:pb-0 pb-4 xl:static absolute font text-primary bg-zinc-900 xl:w-auto w-full top-14 duration-200 ease-in z-[100]"
         :class="[open ? 'left-0' : 'left-[-100%]']">
             <li class="md:mx-4 md:my-0 my-6 pt-4" v-for="(link,name) in Links" :key="name">
-                <nuxt-link :to="link.link" class="text-xl hover:text-green-500">{{ link.name }}</nuxt-link>
+                <nuxt-link :to="link.link" class="text-xl hover:text-amber-400">{{ link.name }}</nuxt-link>
             </li>
         </ul>
     </div>
