@@ -1,5 +1,5 @@
 <template>
-    <div class="md:flex md:gap-16  md:pt-32 mx-24 2xl:mx-48 text-primary">
+    <div class="md:flex md:gap-16 md:pt-32 mx-12 md:mx-24 2xl:mx-48 text-primary">
         <div class="pt-24 md:w-1/2">
             <HomePageAbout />
         </div>
