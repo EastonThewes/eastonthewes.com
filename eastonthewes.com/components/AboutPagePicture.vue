@@ -1,7 +1,7 @@
 <template>
     <div class="flex w-3/6 " id="AboutPagePicture">
         <div class="flex justify-center">
-            <img class="rounded-3xl" :src=" filename ">
+             <slot />
         </div>
     </div>
 </template>
