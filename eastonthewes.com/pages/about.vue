@@ -1,18 +1,21 @@
 <template>
-    <div class="flex pt-16 bg-secondary height">
-        <div class="flex flex-col justify-center pl-64 w-4/6">
-            <p class=" text-primary butler text-3xl pb-4">My name is Easton Thewes and I am 23 years old</p>
-            <p class=" text-primary butler text-3xl pb-4">I just finished my degree in Computer Engineering at West Virginia University in Morgantown, WV</p>
+    <div class="flex flex-col md:flex-row pt-16 bg-secondary">
+        <div class=" w-5/6 md:w-4/6 text-2xl md:text-3xl m-auto md:pl-32">
+            <p class="text-primary butler pb-4 ">My name is Easton Thewes and I am 23 years old</p>
+            <p class="text-primary butler pb-4 ">I just finished my degree in Computer Engineering at West Virginia University in Morgantown, WV</p>
         </div>
-        <AboutPagePicture><img class="rounded-3xl" src="../assets/images/eastontree.jpg"></AboutPagePicture>
+        <div class="pt-8 md:pt-0 flex w-11/12 justify-center m-auto">
+            <AboutPagePicture><img class="rounded-3xl" src="../assets/images/eastontree.jpg"></AboutPagePicture>
+        </div>
     </div>
 
-    <div class="flex pt-32 pb-32 bg-secondary height">
-        <AboutPagePicture><img class="rounded-3xl" src="../assets/images/easton.jpg"></AboutPagePicture>
-        <div class="flex flex-col justify-center pl-0 pr-64 w-4/6">
-            <p class=" text-primary butler text-3xl pb-4">I have a love for learning and programming and decided to build this website to broaden my skills and learn new tech</p>
-            <p class=" text-primary butler text-3xl pb-4">In 2023 I'm hoping to find a full time position developing full stack web applications or embedded software developing</p>
-            <p class=" text-primary butler text-3xl pb-4">I would love to learn more about low level systems or application development through hands on experience</p>
+    <div class="flex flex-col-reverse md:flex-row pt-32 pb-12 bg-secondary">
+        <div class="pt-8 md:pt-0 flex w-11/12 justify-center m-auto">
+            <AboutPagePicture><img class="rounded-3xl" src="../assets/images/easton.jpg"></AboutPagePicture>
+        </div>
+        <div class=" w-5/6 md:w-4/6 text-2xl md:text-3xl m-auto md:pr-32">
+            <p class="text-primary butler pb-4 ">My name is Easton Thewes and I am 23 years old</p>
+            <p class="text-primary butler pb-4 ">I just finished my degree in Computer Engineering at West Virginia University in Morgantown, WV</p>
         </div>
     </div>
 
@@ -52,5 +55,9 @@
 
     .height {
         height: 48rem;
+    }
+
+    .pic {
+        width: 60%;
     }
 </style>

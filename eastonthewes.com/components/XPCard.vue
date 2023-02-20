@@ -3,9 +3,9 @@
         <div  class="text-amber-400 text-2xl title pl-4 pt-4"><h1>{{ title }}</h1></div>
         <div class="text-primary text-md title pl-4 "><h1><i>{{ company }}</i></h1></div> 
         <div class="text-primary text-md title pl-4 "><h1><i>{{ startDate }} - {{ endDate }}</i></h1></div>
-        <div class="pt-4 pl-8 desc text-xl"><p class="text-primary ">- {{ desc1 }}</p></div>
-        <div class="pt-4 pl-8 desc text-xl"><p class="text-primary">- {{ desc2 }}</p></div>
-        <div class="pt-4 pl-8 desc text-xl"><p class="text-primary">- {{ desc3 }}</p></div>
+        <div class="pt-4 pl-8 desc text-2xl"><p class="text-primary ">- {{ desc1 }}</p></div>
+        <div class="pt-4 pl-8 desc text-2xl"><p class="text-primary">- {{ desc2 }}</p></div>
+        <div class="pt-4 pl-8 desc text-2xl"><p class="text-primary">- {{ desc3 }}</p></div>
     </div>
 </template>
 
