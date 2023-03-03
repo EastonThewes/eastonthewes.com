@@ -1,6 +1,6 @@
 <template>
     <div class="flex gap-4 justify-center h-min min-w-full">
-        <img class="image" src="../static/files/eastonnew.JPG" alt="">
+        <img class="image" src="../static/files/easton.png" alt="">
         <div class="flex flex-col justify-center">
             <div class="name">
                 Easton Thewes
