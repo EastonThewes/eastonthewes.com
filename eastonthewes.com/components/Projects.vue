@@ -33,7 +33,7 @@
                 <p>Micromouse Final Project</p>
             </div>
             <div class="desc text-just">
-                <p class="pt-2"> <b>-</b> Developed an algoritm in C to solve a maze with a simulated Micromouse robot</p>
+                <p class="pt-2"> <b>-</b> Developed an algorithm in C to solve a maze with a simulated Micromouse robot</p>
                 <a class="link" href="https://github.com/EastonThewes/FloodFill-MicroMouse" target="_blank"><p class="underline pt-2">GitHub Repo</p></a>
             </div>
         </div>
