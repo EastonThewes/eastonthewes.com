@@ -1,4 +1,5 @@
 <template>
+    <title>eastonthewes.com</title>
     <div class="main-screen min-h-screen">
         <div class="website md:sticky text-xl pl-8 md:top-8 pt-8 md:pt-0"><h1>eastonthewes.com</h1></div>
         <div class="flex justify-center pb-24">
@@ -38,7 +39,7 @@
         font-weight: bold;
     }
     .main-screen {
-        background-color: black;
+        background-color: #141414;
     }
 
     .main-content {

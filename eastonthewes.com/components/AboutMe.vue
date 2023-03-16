@@ -1,7 +1,7 @@
 <template>
     <div class="about-me min-w-full">
         <h3>About</h3>
-        <p>Hi my name is easton thewes and I am a recent graduate from West Virginia University and I am looking to start my career</p>
+        <p>Hi my name is easton thewes and I am a recent graduate from West Virginia University and I am looking to begin my career!</p>
     </div>
 </template>
 

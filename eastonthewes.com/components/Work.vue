@@ -10,7 +10,7 @@
         </div>
         <div class="w-2/3 flex flex-col">
             <div class="title">
-                <p>Application Developer - Encova Insurance</p>
+                <p>Application Developer Intern - Encova Insurance</p>
             </div>
             <div class="desc text-just">
                 <p class="pt-2"> <b>-</b> Designed and developed internal applications using Angular, C# and .NET</p>
