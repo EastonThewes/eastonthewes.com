@@ -6,7 +6,8 @@
                 Easton Thewes
             </div>
             <div class="sub-text">
-                WVU Computer Engineer Grad
+                Firmware Engineer <br>
+                <a href="https://www.eagleresearchcorp.com">@Eagle Research Corporation</a>
             </div>
         </div>
     </div>
