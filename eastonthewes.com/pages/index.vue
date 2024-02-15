@@ -4,7 +4,7 @@
         <div class="website md:sticky text-xl pl-8 md:top-8 pt-8 md:pt-0"><h1>eastonthewes.com</h1></div>
         <div class="flex justify-center pb-24">
             
-            <div class="flex flex-col items-center mx-8 md:w-1/3 gap-y-4 pt-24">
+            <div class="flex flex-col items-center mx-4 w-4/6 md:w-1/2 lg:w-1/3 gap-y-4 pt-24">
                 <Name />
                 <AboutMe />
                 <Work />
