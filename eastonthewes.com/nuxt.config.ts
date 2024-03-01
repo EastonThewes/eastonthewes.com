@@ -5,7 +5,14 @@
 
 export default {
     target:'static',
-    modules: [    '@nuxtjs/tailwindcss'  ]
+    modules: [    '@nuxtjs/tailwindcss'  ],
+    nitro: {
+        prerender: {
+          autoSubfolderIndex: false
+        }
+      }
 }
+
+
 
 
