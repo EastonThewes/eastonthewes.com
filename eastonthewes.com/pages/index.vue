@@ -40,6 +40,8 @@
     }
     .main-screen {
         background-color: #141414;
+        min-height: 100vh;
+        height: auto; 
     }
 
     .main-content {
