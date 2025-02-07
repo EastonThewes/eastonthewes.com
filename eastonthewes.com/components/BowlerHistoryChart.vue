@@ -1,58 +1,92 @@
 <template>
-    <div class="chart-container px-4 sm:px-8 py-10">
-      <h2 class="text-2xl font-bold text-white mb-2">Today's Average Over Time</h2>
-      <Line
-        v-if="chartData"
-        :data="chartData"
-        :options="chartOptions"
-        class="h-40 sm:h-64"
-      />
-    </div>
-  
-    <div class="chart-container px-4 sm:px-8 py-10">
-      <h2 class="text-2xl font-bold text-white mb-2">Average After Bowling Over Time</h2>
-      <Line
-        v-if="runningAverageChartData"
-        :data="runningAverageChartData"
-        :options="chartOptions"
-        class="h-40 sm:h-64"
-      />
-    </div>
-  
-    <div class="table-container px-0 sm:px-8 py-20">
-      <h2 class="text-2xl px-2 font-bold text-white mb-4">Bowling Weekly Scores</h2>
-      <table class="min-w-full table-uto bg-gray-800 rounded-lg shadow-lg">
-        <thead>
-          <tr>
-            <th class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white">Week #</th>
-            <th class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white">Game 1</th>
-            <th class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white">Game 2</th>
-            <th class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white">Game 3</th>
-            <th class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white">Series Total</th>
-            <th class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white">Today's Avg</th>
-            <th class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white">Season Avg</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr
-            v-for="week in tableData"
-            :key="week.WeekNum"
-            class="border-t border-gray-600 hover:bg-gray-700"
+  <div class="chart-container w-5/6">
+    <h2 class="text-2xl font-bold text-white mb-4">Weekly Avg. vs. Week</h2>
+    <Line v-if="chartData" :data="chartData" :options="chartOptions1" />
+  </div>
+
+  <div class="chart-container w-5/6">
+    <h2 class="text-2xl font-bold text-white mb-4">Avg vs. Week</h2>
+    <Line
+      v-if="runningAverageChartData"
+      :data="runningAverageChartData"
+      :options="chartOptions2"
+    />
+  </div>
+
+  <div class="table-container  w-5/6">
+    <h2 class="text-2xl font-bold mb-4">Bowling Weekly Scores</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th
+            class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white"
           >
-            <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">{{ week.WeekNum }}</td>
-            <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">{{ week.Score1 }}</td>
-            <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">{{ week.Score2 }}</td>
-            <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">{{ week.Score3 }}</td>
-            <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">{{ week.SeriesTotal }}</td>
-            <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">{{ week.TodaysAverage }}</td>
-            <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">{{ week.RunningAverage }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </template>
-  
-  
+            Week #
+          </th>
+          <th
+            class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white"
+          >
+            Game 1
+          </th>
+          <th
+            class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white"
+          >
+            Game 2
+          </th>
+          <th
+            class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white"
+          >
+            Game 3
+          </th>
+          <th
+            class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white"
+          >
+            Series Total
+          </th>
+          <th
+            class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white"
+          >
+            Today's Avg
+          </th>
+          <th
+            class="text-left p-1 sm:p-2 text-xs sm:text-sm font-semibold text-white"
+          >
+            Season Avg
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="week in tableData"
+          :key="week.WeekNum"
+          class="border-t border-gray-600 hover:bg-gray-700"
+        >
+          <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">
+            {{ week.WeekNum }}
+          </td>
+          <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">
+            {{ week.Score1 }}
+          </td>
+          <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">
+            {{ week.Score2 }}
+          </td>
+          <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">
+            {{ week.Score3 }}
+          </td>
+          <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">
+            {{ week.SeriesTotal }}
+          </td>
+          <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">
+            {{ week.TodaysAverage }}
+          </td>
+          <td class="p-1 sm:p-2 text-xs sm:text-sm text-white">
+            {{ week.RunningAverage }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
 
 <script lang="ts" setup>
 import { computed } from "vue";
@@ -95,7 +129,7 @@ const chartData = computed(() => {
         label: "Today's Average",
         data: reversedData.map((item) => item.TodaysAverage),
         borderColor: "#F0F0F0",
-        backgroundColor: "rgba(255, 255, 255, 0.2)",
+        backgroundColor: "rgba(255, 255, 255, 0.5)",
         tension: 0.3,
         fill: true,
       },
@@ -160,33 +194,84 @@ const tableData = computed(() => {
 });
 
 // Chart options
-const chartOptions = {
+const chartOptions1 = {
   responsive: true,
-  maintainAspectRatio: false,
+  maintainAspectRatio: true,
+  layout: {
+    padding: {
+      top: 20,
+    },
+  },
+  plugins: {
+    legend: {
+      display: false,
+    },
+  },
   scales: {
-    x: { title: { display: true, text: "Week Number" } },
-    y: { title: { display: true, text: "Today's Average" } },
+    x: {
+      grid: {
+        color: "rgba(200, 200, 200, 0.3)",
+      },
+      ticks: {
+        color: "#A0A0A0",
+      },
+    },
+    y: {
+      grid: {
+        color: "rgba(200, 200, 200, 0.3)",
+      },
+      ticks: {
+        color: "#A0A0A0",
+        padding: 10,
+      },
+      suggestedMax: 250, // Set this to your desired maximum value
+    },
+  },
+};
+
+const chartOptions2 = {
+  responsive: true,
+  maintainAspectRatio: true,
+  layout: {
+    padding: {
+      top: 20,
+    },
+  },
+  plugins: {
+    legend: {
+      display: false,
+    },
+  },
+  scales: {
+    x: {
+      grid: {
+        color: "rgba(200, 200, 200, 0.3)",
+      },
+      ticks: {
+        color: "#A0A0A0",
+      },
+    },
+    y: {
+      grid: {
+        color: "rgba(200, 200, 200, 0.3)",
+      },
+      ticks: {
+        color: "#A0A0A0",
+        padding: 10,
+      },
+      suggestedMax: 220, // Set this to your desired maximum value
+    },
   },
 };
 </script>
 
 <style scoped>
 .chart-container {
-  width: 100%;
-  max-width: 800px;
-  height: 500px;
-  margin: auto;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .table-container {
-  width: 100%;
-  max-width: 800px;
-  padding-bottom: 50px;
-  margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -197,13 +282,10 @@ h2 {
 
 table {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
 }
 th,
 td {
   border: 1px solid #474747;
-  padding: 8px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
