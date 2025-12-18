@@ -16,8 +16,9 @@
             </div>
             <div class="desc text-just">
                 <p class="pt-2"> <b>-</b> Developing firmware for Natural Gas Flow Computers using ARM Cortex M4, M0, and MSP430 processors</p>
-                <p class="pt-2"> <b>-</b> Maintaining desktop applications with Delphi using RAD studio</p>
-                <!-- <p class="pt-2"> <b>-</b> Provided user support and handled support tickets through ServiceNow for internal web applications</p> -->
+                <p class="pt-2"> <b>-</b> Diagnosed, evaluated, and resolved complex firmware and hardware issues, improving performance and reliability</p>
+                <p class="pt-2"> <b>-</b> Authored and maintained technical documentaion between RTU's and other devices, ensuring seamless integration and industry compliance</p>
+                <p class="pt-2"> <b>-</b> Developed and deployed a modern SCADA web application using React and .NET, SQLServer, streamlining data monitoring and reporting, improving secuirty and user experience</p>
             </div>
         </div>
     </div>
